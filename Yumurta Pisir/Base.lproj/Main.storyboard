@@ -21,7 +21,21 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYe-cd-HXr" userLabel="Top Label View">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="252.33333333333334"/>
-                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9xV-hM-k9d">
+                                                <rect key="frame" x="20" y="0.0" width="353" height="252.33333333333334"/>
+                                                <string key="text">How do you want to prepare egg ? How do you want to prepare egg ? How do you want to prepare egg ? How do you want to prepare egg ? How do you want to prepare egg ? How do you want to prepare egg ?</string>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9xV-hM-k9d" firstAttribute="leading" secondItem="dYe-cd-HXr" secondAttribute="leading" constant="20" id="XWJ-X9-qnZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="9xV-hM-k9d" secondAttribute="bottom" id="YZK-vM-3PB"/>
+                                            <constraint firstAttribute="trailing" secondItem="9xV-hM-k9d" secondAttribute="trailing" constant="20" id="sDW-Zw-r6H"/>
+                                            <constraint firstItem="9xV-hM-k9d" firstAttribute="top" secondItem="dYe-cd-HXr" secondAttribute="top" id="sYr-ds-de3"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8S-qS-rRb" userLabel="Middle Button View">
                                         <rect key="frame" x="0.0" y="253.33333333333331" width="393" height="252.33333333333331"/>
@@ -66,7 +80,6 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Medium"/>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="Wua-2y-TaM" secondAttribute="bottom" id="1s2-GO-bE2"/>
                                                             <constraint firstAttribute="bottom" secondItem="yZ6-1i-ll0" secondAttribute="bottom" id="8h6-T3-lDC"/>
@@ -91,7 +104,6 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Hard"/>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="sne-rf-ClK" firstAttribute="leading" secondItem="gJu-iy-Jwk" secondAttribute="leading" id="5D1-xg-OsG"/>
                                                             <constraint firstAttribute="bottom" secondItem="w4P-SU-D7m" secondAttribute="bottom" id="HXo-1s-EcI"/>
@@ -118,10 +130,11 @@
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a10-gm-VfN" secondAttribute="bottom" id="L8M-Yd-eUG"/>
                             <constraint firstItem="a10-gm-VfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZyO-iy-eZs"/>
@@ -139,11 +152,8 @@
         <image name="hard_egg" width="287.66665649414062" height="366.33334350585938"/>
         <image name="medium_egg" width="288" height="363.33334350585938"/>
         <image name="soft_egg" width="287" height="365.33334350585938"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
