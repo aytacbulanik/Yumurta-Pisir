@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var progressView: UIProgressView!
     
     let eggTime = ["Soft" : 5, "Medium" : 12, "Hard" : 20]
     var timer = Timer()
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
     @IBAction func eggButtonSlected(_ sender: UIButton) {
         let buttonName = sender.titleLabel!.text!
             cookEgg(buttonName)
+        progressView.progress = 1
     }
     func cookEgg(_ name : String) {
         guard let eggTimeInt = eggTime[name] else {return}
