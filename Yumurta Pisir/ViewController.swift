@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -17,9 +18,12 @@ class ViewController: UIViewController {
     var currentTime = 0
     var nextTime = 0
     var totalTime = 0
+    var player = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     @IBAction func eggButtonSlected(_ sender: UIButton) {
@@ -43,9 +47,15 @@ class ViewController: UIViewController {
         currentTime -= 1
         nextTime += 1
         if currentTime < 0 {
+            playAlarm()
             resultLabel.text = "DONE !"
             timer.invalidate()
         }
+    }
+    func playAlarm() {
+        guard let bundle = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3") else {return}
+        player = try! AVAudioPlayer(contentsOf: bundle)
+        player.play()
     }
 }
 

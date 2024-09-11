@@ -13,6 +13,7 @@
 		B410268E2C8D917B002A5FFD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B410268D2C8D917B002A5FFD /* Base */; };
 		B41026902C8D917D002A5FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B410268F2C8D917D002A5FFD /* Assets.xcassets */; };
 		B41026932C8D917D002A5FFD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B41026922C8D917D002A5FFD /* Base */; };
+		B4EEAE8C2C9242A300735655 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4EEAE8B2C9242A200735655 /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B410268F2C8D917D002A5FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B41026922C8D917D002A5FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B41026942C8D917D002A5FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4EEAE8B2C9242A200735655 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B410268F2C8D917D002A5FFD /* Assets.xcassets */,
 				B41026912C8D917D002A5FFD /* LaunchScreen.storyboard */,
 				B41026942C8D917D002A5FFD /* Info.plist */,
+				B4EEAE8B2C9242A200735655 /* alarm_sound.mp3 */,
 			);
 			path = "Yumurta Pisir";
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				B41026902C8D917D002A5FFD /* Assets.xcassets in Resources */,
 				B41026932C8D917D002A5FFD /* Base in Resources */,
+				B4EEAE8C2C9242A300735655 /* alarm_sound.mp3 in Resources */,
 				B410268E2C8D917B002A5FFD /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
